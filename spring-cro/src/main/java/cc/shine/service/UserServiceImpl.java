@@ -1,4 +1,4 @@
-package service;
+package cc.shine.service;
 
 /**
  * @author caiwenhai

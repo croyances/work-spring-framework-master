@@ -1,9 +1,9 @@
-package controller;
+package cc.shine.controller;
 
-import config.Config;
+import cc.shine.config.Config;
+import cc.shine.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import service.UserService;
 
 /**
  * @author caiwenhai

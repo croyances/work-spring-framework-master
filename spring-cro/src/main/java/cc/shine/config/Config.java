@@ -1,9 +1,9 @@
-package config;
+package cc.shine.config;
 
+import cc.shine.service.UserService;
+import cc.shine.service.UserServiceImpl;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import service.UserService;
-import service.UserServiceImpl;
+import org.springframework.context.annotation.ImportResource;
 
 /**
  * @author caiwenhai
@@ -11,9 +11,8 @@ import service.UserServiceImpl;
  * @date 2020/11/12 15:45
  */
 
-@Configuration
+@ImportResource("application.xml")
 public class Config {
-
 	@Bean
 	public UserService userService(){
 		return new UserServiceImpl();
